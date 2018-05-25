@@ -30,6 +30,9 @@ body {
 @font-face {
   font-family: 'LL';
   src: url("../fonts/Lato-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'social';
+  src: url("../fonts/SocialType.ttf") format("truetype"); }
 .page-title {
   -webkit-box-flex: 1.25;
       -ms-flex: 1.25;
@@ -484,7 +487,7 @@ body {
         font-weight: bold; }
   .footer .social {
     margin-top: 5px;
-    font-family: 'socialtype'; }
+    font-family: 'social'; }
     .footer .social__list {
       list-style: none; }
     .footer .social__item {

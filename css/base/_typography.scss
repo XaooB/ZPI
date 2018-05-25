@@ -8,6 +8,11 @@
   src: url('../fonts/Lato-Light.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'social';
+  src: url('../fonts/SocialType.ttf') format('truetype');
+}
+
 .page-title {
   flex:1.25;
   margin-right:15px;
