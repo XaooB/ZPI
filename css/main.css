@@ -91,14 +91,13 @@ body {
   margin: 30px 0; }
 
 .logo {
-  width: 25%;
-  background: url("../images/svg/logo.svg") no-repeat;
-  font-weight: bold;
-  text-indent: -99999px;
-  height: 68px; }
+  height: 68px;
+  width: 25%; }
   .logo a {
     line-height: 68px;
     display: block; }
+    .logo a img {
+      height: 68px; }
 
 .navigation {
   max-width: 75%;

@@ -6,13 +6,13 @@
 }
 
 .logo {
-  width:25%;
-  background:url('../images/svg/logo.svg') no-repeat;
-  font-weight:bold;
-  text-indent: -99999px;
   height:68px;
+  width:25%;
   a {
     line-height: 68px;
     display:block;
+    img {
+      height:68px;
+    }
   }
 }
