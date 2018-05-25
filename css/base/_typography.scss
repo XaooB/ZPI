@@ -8,19 +8,17 @@
   color:$textPrimaryColor;
   line-height: .85;
   text-shadow: $sectionHeaderColor 1px 3px 0;
-}
-
-.exceptional {
-  position: relative;
-  &:after {
-    position: absolute;
-    content:'WE ARE EXCEPTIONAL BUSTERS';
-    top:-4px;
-    left:-6px;
-    font-size: 1.01em;
-    color:$btnMoreBgColor;
-    opacity: .85;
-    z-index: -1;
+  @media #{$max980} {
+    font-size:4.5em;
+  }
+  @media #{$max720} {
+    font-size:4em;
+  }
+  @media #{$max540} {
+    font-size:3em;
+  }
+  @media #{$max360} {
+    font-size:2.5em;
   }
 }
 
@@ -34,6 +32,38 @@
     text-align: justify;
     color:$pageIntroColor;
     margin-bottom:12px;
+    @media #{$max980} {
+      font-size:1.1em;
+    }
+    @media #{$max720} {
+      margin-top:20px;
+      margin-left:120px;
+    }
+    @media #{$max540} {
+      font-size:1em;
+      margin-left: 75px;
+    }
+    @media #{$max360} {
+      font-size: .9em;
+    }
+  }
+}
+
+.exceptional {
+  position: relative;
+  &:after {
+    position: absolute;
+    content:'WE ARE EXCEPTIONAL BUSTERS';
+    top:-4px;
+    left:-6px;
+    font-size: 1.01em;
+    color:$btnMoreBgColor;
+    opacity: .85;
+    z-index: -1;
+    @media #{$max540} {
+      top:-3px;
+      left:-4px;
+    }
   }
 }
 
@@ -43,6 +73,9 @@
   text-transform: uppercase;
   margin-bottom:30px;
   letter-spacing: 2px;
+  @media #{$max720} {
+    text-align: center;
+  }
 }
 
 .section-text {
@@ -53,21 +86,32 @@
   & + p {
     margin-top:34px;
   }
+  @media #{$max540} {
+    font-size:1.1em;
+  }
 }
 
-.footer__header {
-  font-size:.875em;
-  position: relative;
-  font-weight:bold;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  padding-bottom: 8px;
-  &:before {
-    position: absolute;
-    content: '';
-    left:0;
-    bottom:0;
-    border-bottom:2px solid $navColor;
-    width:50px;
+.footer {
+  &__header {
+    font-size:.875em;
+    position: relative;
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-bottom: 8px;
+    &:before {
+      position: absolute;
+      content: '';
+      left:0;
+      bottom:0;
+      border-bottom:2px solid $navColor;
+      width:50px;
+    }
+  }
+  &__copyright {
+    font-size: .6875em;
+    text-align: center;
+    padding-bottom:15px;
+    letter-spacing: 1.3px;
   }
 }

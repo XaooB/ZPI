@@ -1,16 +1,33 @@
 .project {
   padding:150px 0;
   margin:50px 0;
+  @media #{$max720} {
+    margin:20px 0;
+    padding:50px 0;
+  }
   &__logo {
     height:500px;
+    @media #{$max720} {
+      height:200px;
+      margin-bottom:50px;
+    }
+    @media #{$max360} {
+      height:150px;
+    }
   }
   &__info {
     width:55%;
+    @media #{$max720} {
+      width:100%;
+    }
   }
   &__wrapper {
     display:flex;
     justify-content: space-between;
     flex-flow: row;
     align-items: center;
+    @media #{$max720} {
+      flex-flow: column;
+    }
   }
 }

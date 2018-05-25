@@ -13,6 +13,9 @@
     display:block;
     img {
       height:68px;
+      @media #{$max360} {
+        height:50px;
+      }
     }
   }
 }

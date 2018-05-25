@@ -11,17 +11,15 @@ body {
 .container {
   max-width:1200px;
   margin:0 auto;
-  padding:0 5px;
+  padding:0 10px;
 }
 
 .company,
 .social-media,
 .contact,
 .footer-nav {
-  width:250px;
-  margin-bottom:20px;
-}
-
-.footer-nav {
-  margin-left:80px; //tmp
+  width:240px;
+  @media #{$max980} {
+    margin-bottom:20px;
+  }
 }

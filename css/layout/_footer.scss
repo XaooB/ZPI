@@ -1,15 +1,26 @@
 .footer {
-  background-image: url("../images/footer_bg.png");
-  min-height:381px;
+  background: url("../images/footer_bg.png");
   background-repeat: no-repeat;
   background-position: bottom center;
+  min-height:381px;
   color:$textPrimaryColor;
+  @media #{$max980} {
+    background: #0d9b7a; /* Old browsers */
+    background: -moz-linear-gradient(top, #0d9b7a 0%,#08bd62 30%, #08bd62 50%, #08bd62 70%, #0d9b7a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #0d9b7a 0%,#08bd62 30%, #08bd62 50%, #08bd62 70%, #0d9b7a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #0d9b7a 0%,#08bd62 30%, #08bd62 50%, #08bd62 70%, #0d9b7a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d9b7a', endColorstr='#0d9b7a',GradientType=0 ); /* IE6-9 */
+  }
   &__wrapper {
-    padding-top:150px;
+    padding-top:140px;
     display:flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    @media #{$max980} {
+      justify-content: space-around;
+      padding-top: 50px;
+    }
   }
   &__svg {
     width:100%;

@@ -1,6 +1,9 @@
 .navigation {
   max-width:75%;
   line-height: 68px;
+  @media #{$max720} {
+    display:none; //show mobile nav instead
+  }
   &__list {
     font-size:.875em;
     list-style-type: none;

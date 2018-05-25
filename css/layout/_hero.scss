@@ -6,6 +6,14 @@
   background-attachment: fixed; //parallax effect
   height:712px;
   overflow:hidden;
+  @media #{$max980} {
+    background-position: top center;
+    background-attachment: local;
+    background-position-x:-150px;
+  }
+  @media #{$max720} {
+    margin-bottom:10px;
+  }
   &__wrapper {
     display:flex;
     margin:0 auto;
@@ -14,5 +22,16 @@
     flex-flow: row;
     line-height: 1.5;
     width:80%;
+    @media #{$max980} {
+      width:100%;
+    }
+    @media #{$max720} {
+      flex-flow:column;
+      width:90%;
+      margin-top:80px;
+    }
+    @media #{$max540} {
+      margin-top:60px;
+    }
   }
 }
