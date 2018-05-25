@@ -1,5 +1,8 @@
 .scroll-down {
   text-align: center;
+  @media #{$max360} {
+    display:none;
+  }
   a {
     background: url("../images/svg/arrow.svg") no-repeat center;
     width:40px;

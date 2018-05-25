@@ -7,6 +7,9 @@
   background: -webkit-linear-gradient(top, #0d9b7a 0%,#08bd62 50%,#0d9b7a 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #0d9b7a 0%,#08bd62 50%,#0d9b7a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d9b7a', endColorstr='#0d9b7a',GradientType=0 ); /* IE6-9 */
+  @media #{$max980} {
+    margin-bottom:0;
+  }
   .section-title {
     padding-bottom:20px;
     color:#fff;

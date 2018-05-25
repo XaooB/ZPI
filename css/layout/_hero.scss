@@ -14,6 +14,9 @@
   @media #{$max720} {
     margin-bottom:10px;
   }
+  @media #{$max360} {
+    height:620px;
+  }
   &__wrapper {
     display:flex;
     margin:0 auto;
@@ -32,6 +35,9 @@
     }
     @media #{$max540} {
       margin-top:60px;
+    }
+    @media #{$max360} {
+      margin-top:30px;
     }
   }
 }
