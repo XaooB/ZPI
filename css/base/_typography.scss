@@ -1,12 +1,13 @@
 .page-title {
   flex:1.25;
   margin-right:15px;
-  h2 {
-    font-size: 5em;
-    color:$textPrimaryColor;
-    line-height: .85;
-    text-shadow: $sectionHeaderColor 1px 3px 0;
-  }
+}
+
+.page-header {
+  font-size: 5em;
+  color:$textPrimaryColor;
+  line-height: .85;
+  text-shadow: $sectionHeaderColor 1px 3px 0;
 }
 
 .exceptional {
@@ -51,5 +52,22 @@
   margin-bottom:20px;
   & + p {
     margin-top:34px;
+  }
+}
+
+.footer__header {
+  font-size:.875em;
+  position: relative;
+  font-weight:bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding-bottom: 8px;
+  &:before {
+    position: absolute;
+    content: '';
+    left:0;
+    bottom:0;
+    border-bottom:2px solid $navColor;
+    width:50px;
   }
 }
