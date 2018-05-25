@@ -1,0 +1,30 @@
+.scroll-wrapper {
+  position: fixed;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  right:40px;
+  bottom:40px;
+  background: #ffffff;
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  border:3px solid $sectionHeaderColor;
+  a {
+    display: block;
+    position: relative;
+    width: inherit;
+    height: inherit;
+    left:26px;
+    text-decoration: none;
+    transform: rotate(90deg);
+    font-size:4em;
+    color:$sectionHeaderColor;
+    text-align: center;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    font-weight:bold;
+  }
+}

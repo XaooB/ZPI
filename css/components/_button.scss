@@ -1,0 +1,16 @@
+.btn {
+  padding:10px;
+  border:none;
+  font-size:.875em;
+  text-transform: uppercase;
+  border-radius: $radius;
+  font-weight:bold;
+  cursor: pointer;
+  &-success {
+    color:$heroBtnColor;
+    background:#ffffff;
+  }
+  &-right {
+    float:right;
+  }
+}

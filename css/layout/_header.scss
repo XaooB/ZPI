@@ -1,0 +1,18 @@
+.header {
+  display:flex;
+  justify-content: space-between;
+  flex-flow: row;
+  margin:30px 0;
+}
+
+.logo {
+  width:25%;
+  background:url('../images/svg/logo.svg') no-repeat;
+  font-weight:bold;
+  text-indent: -99999px;
+  height:68px;
+  a {
+    line-height: 68px;
+    display:block;
+  }
+}

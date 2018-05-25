@@ -1,0 +1,20 @@
+.hero {
+  background-image: url("../images/bg.png");
+  max-width:1900px;
+  margin:0 auto;
+  margin-bottom:35px;
+  background-repeat: no-repeat;
+  background-position: top right; // do zmiany img
+  background-attachment: fixed; //parallax effect
+  height:712px;
+  overflow:hidden;
+  &__wrapper {
+    display:flex;
+    margin:0 auto;
+    align-items: center;
+    margin-top:100px;
+    flex-flow: row;
+    line-height: 1.5;
+    width:80%;
+  }
+}

@@ -1,0 +1,71 @@
+.about {
+  margin-bottom:200px;
+  padding:60px 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d9b7a+0,08bd62+50,0d9b7a+100 */
+  background: #0d9b7a; /* Old browsers */
+  background: -moz-linear-gradient(top, #0d9b7a 0%, #08bd62 50%, #0d9b7a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #0d9b7a 0%,#08bd62 50%,#0d9b7a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #0d9b7a 0%,#08bd62 50%,#0d9b7a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d9b7a', endColorstr='#0d9b7a',GradientType=0 ); /* IE6-9 */
+  .section-title {
+    padding-bottom:20px;
+    color:#fff;
+    text-align: center;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__item {
+    text-align: center;
+    max-width:310px;
+    margin-bottom:50px;
+    color:$textPrimaryColor;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  &__image-wrapper {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height:175px;
+    width:175px;
+    border-radius:100%;
+    border:5px solid #fff;
+    overflow:hidden;
+    margin:0 auto;
+  }
+  &__image {
+    width:175px;
+  }
+  &__name {
+    font-size: 1.125em;
+    padding-top:20px;
+    font-weight:lighter;
+    padding-bottom:2px;
+  }
+  &__position {
+    font-weight:bold;
+    font-size:.875em;
+    padding-bottom:22px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      border-bottom:1.9px solid #fff;
+      left:50%;
+      bottom:10px;
+      transform: translateX(-50%);
+      width:50px;
+    }
+  }
+  &__me {
+    font-weight:lighter;
+    text-align: justify;
+  }
+}

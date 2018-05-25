@@ -1,0 +1,55 @@
+.page-title {
+  flex:1.25;
+  margin-right:15px;
+  h2 {
+    font-size: 5em;
+    color:$textPrimaryColor;
+    line-height: .85;
+    text-shadow: $sectionHeaderColor 1px 3px 0;
+  }
+}
+
+.exceptional {
+  position: relative;
+  &:after {
+    position: absolute;
+    content:'WE ARE EXCEPTIONAL BUSTERS';
+    top:-4px;
+    left:-6px;
+    font-size: 1.01em;
+    color:$btnMoreBgColor;
+    opacity: .85;
+    z-index: -1;
+  }
+}
+
+.page-desc {
+  margin-left:15px;
+  flex:1;
+  overflow:hidden;
+  p {
+    font-weight:lighter;
+    font-size:1.25em;
+    text-align: justify;
+    color:$pageIntroColor;
+    margin-bottom:12px;
+  }
+}
+
+.section-title {
+  font-size: 1.75em;
+  color:$sectionHeaderColor;
+  text-transform: uppercase;
+  margin-bottom:30px;
+  letter-spacing: 2px;
+}
+
+.section-text {
+  line-height: 1.5;
+  font-size: 1.25em;
+  text-align: justify;
+  margin-bottom:20px;
+  & + p {
+    margin-top:34px;
+  }
+}
