@@ -14,11 +14,23 @@
     padding:7px;
     font-size:.65em;
   }
-  &-success {
+  &--success {
     color:$heroBtnColor;
     background:#ffffff;
   }
-  &-right {
+  &--right {
     float:right;
+  }
+  &--scroll {
+    font-size:1.5em;
+    padding:7px 17px;
+    transform:rotate(0deg);
+    transition: .3s ease-in-out;
+    &:hover {
+      color:#fff;
+      background:$heroBtnColor;
+      transform:rotate(360deg);
+      transition: .3s ease-in-out;
+    }
   }
 }
