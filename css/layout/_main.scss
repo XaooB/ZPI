@@ -1,6 +1,6 @@
 .scroll-down {
   text-align: center;
-  @media #{$max360} {
+  @media #{$max720} {
     display:none;
   }
   a {

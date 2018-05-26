@@ -200,13 +200,13 @@ body {
       .navigation__item a:before {
         position: absolute;
         content: '';
-        left: 47%;
-        bottom: 7px;
-        height: 1px;
-        width: 1px;
+        left: 50%;
+        bottom: 5px;
+        height: 2px;
+        width: 2px;
         background: #fff;
-        -webkit-transform: scaleX(0.1) translateX(-50%);
-                transform: scaleX(0.1) translateX(-50%);
+        -webkit-transform: scaleX(1) translateX(-50%);
+                transform: scaleX(1) translateX(-50%);
         -webkit-transition: .3s all;
         transition: .3s all; }
       .navigation__item a:hover:before {
@@ -216,19 +216,6 @@ body {
         -webkit-transition: .3s width;
         transition: .3s width;
         width: 100%; }
-      .navigation__item a:hover:after {
-        position: absolute;
-        content: '';
-        left: 50%;
-        -webkit-transition: .3s all;
-        transition: .3s all;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
-        bottom: 5px;
-        width: 5px;
-        height: 5px;
-        border-radius: 100%;
-        background: #ffffff; }
 
 .hero {
   background-image: url("../images/bg.png");
@@ -238,9 +225,11 @@ body {
   background-attachment: fixed;
   height: 712px;
   overflow: hidden; }
+  @media screen and (max-width: 1400px) {
+    .hero {
+      background-position-x: 150px; } }
   @media screen and (max-width: 980px) {
     .hero {
-      background-position: top center;
       background-attachment: local;
       background-position-x: -150px; } }
   @media screen and (max-width: 720px) {
@@ -284,7 +273,7 @@ body {
 
 .scroll-down {
   text-align: center; }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 720px) {
     .scroll-down {
       display: none; } }
   .scroll-down a {
@@ -304,11 +293,11 @@ body {
     height: 500px; }
     @media screen and (max-width: 720px) {
       .project__logo {
-        height: 200px;
+        height: 150px;
         margin-bottom: 50px; } }
     @media screen and (max-width: 360px) {
       .project__logo {
-        height: 150px; } }
+        height: 100px; } }
   .project__info {
     width: 55%; }
     @media screen and (max-width: 720px) {
@@ -336,7 +325,7 @@ body {
                 flex-flow: column; } }
 
 .about {
-  margin-bottom: 200px;
+  margin-bottom: 70px;
   padding: 60px 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d9b7a+0,08bd62+50,0d9b7a+100 */
   background: #0d9b7a;
@@ -424,8 +413,8 @@ body {
     text-align: justify; }
 
 .reports {
-  padding: 150px 0;
-  margin: 50px 0; }
+  margin-bottom: 70px;
+  text-align: center; }
 
 .footer {
   background: url("../images/footer_bg.png");

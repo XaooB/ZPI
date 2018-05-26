@@ -6,8 +6,10 @@
   background-attachment: fixed; //parallax effect
   height:712px;
   overflow:hidden;
+  @media #{$max1400} {
+    background-position-x: 150px;
+  }
   @media #{$max980} {
-    background-position: top center;
     background-attachment: local;
     background-position-x:-150px;
   }

@@ -33,12 +33,12 @@
       &:before {
         position: absolute;
         content: '';
-        left:47%;
-        bottom:7px;
-        height:1px;
-        width:1px;
+        left:50%;
+        bottom:5px;
+        height:2px;
+        width:2px;
         background:#fff;
-        transform: scaleX(.1) translateX(-50%);
+        transform: scaleX(1) translateX(-50%);
         transition: .3s all;
       }
       &:hover {
@@ -47,18 +47,6 @@
           transform: scaleX(1) translateX(-50%);
           transition: .3s width;
           width:100%;
-        }
-        &:after {
-          position: absolute;
-          content: '';
-          left:50%;
-          transition: .3s all;
-          transform: translateX(-50%);
-          bottom:5px;
-          width:5px;
-          height:5px;
-          border-radius:100%;
-          background:$navColor;
         }
       }
     }

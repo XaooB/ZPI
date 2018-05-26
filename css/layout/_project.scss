@@ -8,11 +8,11 @@
   &__logo {
     height:500px;
     @media #{$max720} {
-      height:200px;
+      height:150px;
       margin-bottom:50px;
     }
     @media #{$max360} {
-      height:150px;
+      height:100px;
     }
   }
   &__info {
