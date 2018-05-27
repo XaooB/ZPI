@@ -9,6 +9,7 @@
     <!-- <meta property="og:description" content="[content description]" /> -->
     <link rel="icon" type="image/png" href="images/icon.png">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="hero">
@@ -134,7 +135,7 @@
         </div> <!-- END OF CONTAINER -->
       </section> <!-- END OF REPORTS -->
     </main> <!-- END OF MAIN -->
-    <footer class='footer'>
+    <footer class='footer' id='contactID'>
       <div class='container'>
         <div class='footer__wrapper'>
           <section class="social-media">
@@ -191,7 +192,20 @@
       </div>  <!-- END OF CONTAINER -->
     </footer>  <!-- END OF FOOTER -->
     <div class="scroll-wrapper">
-      <button type="button" name="button" id='scrollBtn' title='Go to top' class='btn btn--scroll'>&lsaquo;</button>
+      <button type="button" name="button" id='scrollBtn' title='Go to top' class='btn btn--scroll' onclick="scrollToTop()">&lsaquo;</button>
     </div>
+    <script src="js/smoothNavScroll.js"></script>
+    <script src="js/scrollTop.js"></script>
+    <script type="text/javascript">
+    //tmp code
+    let btn = document.querySelector('.scroll-wrapper');
+      window.addEventListener('scroll', function() {
+        if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          btn.style.right = '20px';
+          return;
+        }
+        btn.style.right = '-50px';
+      })
+    </script>
   </body>
 </html>

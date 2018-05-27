@@ -29,6 +29,7 @@
     color:$textPrimaryColor;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-family: 'LL';
   }
   &__image-wrapper {
     display:flex;
@@ -49,14 +50,14 @@
   &__name {
     font-size: 1.125em;
     padding-top:20px;
-    font-weight:lighter;
     padding-bottom:2px;
+    font-weight:lighter;
   }
   &__position {
-    font-weight:bold;
-    font-size:.875em;
+    font-size:.8em;
     padding-bottom:22px;
     position: relative;
+    font-family: 'LB';
     &:after {
       position: absolute;
       content: '';
@@ -68,7 +69,6 @@
     }
   }
   &__me {
-    font-weight:lighter;
     text-align: justify;
   }
 }

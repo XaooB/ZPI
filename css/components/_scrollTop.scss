@@ -1,9 +1,8 @@
 .scroll-wrapper {
   position: fixed;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  right:40px;
-  bottom:40px;
+  right:-50px;
+  bottom:20px;
   transform:rotate(90deg);
+  outline: none;
+  transition:.3s all;
 }

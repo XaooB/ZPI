@@ -76,6 +76,28 @@
       text-decoration: none;
     }
   }
+  &__header {
+    font-size:.875em;
+    position: relative;
+    font-family: 'LB';
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-bottom: 8px;
+    &:before {
+      position: absolute;
+      content: '';
+      left:0;
+      bottom:0;
+      border-bottom:2px solid $navColor;
+      width:50px;
+    }
+  }
+  &__copyright {
+    font-size: .6875em;
+    text-align: center;
+    padding-bottom:15px;
+    letter-spacing: 1.3px;
+  }
 }
 
 .contact-wrapper {

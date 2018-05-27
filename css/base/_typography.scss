@@ -1,11 +1,16 @@
 @font-face {
+  font-family: 'LL';
+  src: url('../fonts/Lato-Light.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'LR';
   src: url('../fonts/Lato-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'LL';
-  src: url('../fonts/Lato-Light.ttf') format('truetype');
+  font-family: 'LB';
+  src: url('../fonts/Lato-Black.ttf') format('truetype');
 }
 
 @font-face {
@@ -104,30 +109,5 @@
   }
   @media #{$max540} {
     font-size:1.1em;
-  }
-}
-
-.footer {
-  &__header {
-    font-size:.875em;
-    position: relative;
-    font-weight:bold;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    padding-bottom: 8px;
-    &:before {
-      position: absolute;
-      content: '';
-      left:0;
-      bottom:0;
-      border-bottom:2px solid $navColor;
-      width:50px;
-    }
-  }
-  &__copyright {
-    font-size: .6875em;
-    text-align: center;
-    padding-bottom:15px;
-    letter-spacing: 1.3px;
   }
 }
