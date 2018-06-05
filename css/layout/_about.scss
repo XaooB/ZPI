@@ -28,7 +28,8 @@
     margin-bottom:50px;
     color:$textPrimaryColor;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    word-spacing: 1.5px;
+    letter-spacing: 1px;
     font-family: 'LL';
   }
   &__image-wrapper {
@@ -69,6 +70,7 @@
     }
   }
   &__me {
+    // font-size:.9em;
     text-align: justify;
   }
 }

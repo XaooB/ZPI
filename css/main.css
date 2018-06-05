@@ -347,7 +347,8 @@ body {
     margin-bottom: 50px;
     color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    word-spacing: 1.5px;
+    letter-spacing: 1px;
     font-family: 'LL'; }
   .about__image-wrapper {
     display: -webkit-box;
@@ -398,6 +399,85 @@ body {
 .reports {
   margin-bottom: 70px;
   text-align: center; }
+  .reports__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-flow: column;
+        flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .reports__item {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 25px; }
+    .reports__item--right {
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
+  .reports__date {
+    display: block;
+    position: relative;
+    font-size: 7em;
+    font-family: 'LR';
+    color: rgba(0, 0, 0, 0.35); }
+    .reports__date:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      left: 0;
+      bottom: 43px;
+      background: #fff;
+      border-bottom: 3px solid #15c191; }
+    .reports__date:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 20px;
+      left: 0;
+      bottom: 23px;
+      background: #fff; }
+  .reports__info {
+    font-family: 'LL';
+    position: relative;
+    top: -20px;
+    left: 0;
+    padding: 0 10px; }
+  .reports__header {
+    font-family: 'LB';
+    font-size: 1.4em;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 3px; }
+  .reports__content {
+    margin-top: 20px;
+    font-size: 1.25em;
+    text-align: justify; }
+  .reports__list {
+    list-style-type: none;
+    text-align: left;
+    font-size: 1.25em; }
+  .reports__element {
+    position: relative;
+    padding-left: 15px; }
+    .reports__element:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 11px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #15c191; }
 
 .footer {
   background: url("../images/footer_bg.png");
@@ -505,7 +585,7 @@ body {
   text-transform: uppercase;
   font-size: .8125em;
   font-weight: lighter;
-  line-height: 1.4; }
+  line-height: 1.5; }
 
 .btn {
   padding: 10px;
