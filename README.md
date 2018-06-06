@@ -1,3 +1,7 @@
-# ZPI
+# 7 EXCEPTION BUSTERS - website for WAKA 2018 project
 
-https://xaoob.github.io/ZPI/
+- Its a project in which we work with companies outside of university.
+
+Used technologies
+------
+- HTML5, CSS3, JS (JQUERY)
