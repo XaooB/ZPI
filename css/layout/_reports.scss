@@ -65,10 +65,19 @@
     list-style-type: none;
     text-align: left;
     font-size:1.25em;
+    &--project {
+      margin-top:-14px;
+    }
   }
   &__element {
     position: relative;
     padding-left:15px;
+    &--project {
+      font-family: 'LL';
+      letter-spacing: 1px;
+      margin-bottom:10px;
+      word-spacing: 5px;
+    }
     &:before {
       position: absolute;
       content:'';

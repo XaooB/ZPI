@@ -116,6 +116,9 @@ body {
 
 .section-text {
   line-height: 1.5;
+  font-family: 'LL';
+  letter-spacing: 1px;
+  word-spacing: 5px;
   font-size: 1.25em;
   text-align: justify;
   margin-bottom: 20px; }
@@ -306,6 +309,11 @@ body {
         -webkit-box-direction: normal;
             -ms-flex-flow: column;
                 flex-flow: column; } }
+  .project__list {
+    font-family: 'LL';
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 1.25em; }
 
 .about {
   margin-bottom: 70px;
@@ -466,9 +474,16 @@ body {
     list-style-type: none;
     text-align: left;
     font-size: 1.25em; }
+    .reports__list--project {
+      margin-top: -14px; }
   .reports__element {
     position: relative;
     padding-left: 15px; }
+    .reports__element--project {
+      font-family: 'LL';
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      word-spacing: 5px; }
     .reports__element:before {
       position: absolute;
       content: '';

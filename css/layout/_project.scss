@@ -30,4 +30,10 @@
       flex-flow: column;
     }
   }
+  &__list {
+    font-family:'LL';
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 1.25em;
+  }
 }
