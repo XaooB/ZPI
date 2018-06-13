@@ -1,4 +1,4 @@
-# 7 EXCEPTION BUSTERS - website for WAKA 2018 project
+# 7 EXCEPTION BUSTERS - website for ZPI project
 
 - Its a project in which we work with companies outside of university.
 
