@@ -432,6 +432,15 @@ body {
     .reports__item--right {
       -ms-flex-item-align: end;
           align-self: flex-end; }
+    @media screen and (max-width: 980px) {
+      .reports__item {
+        width: 70%; } }
+    @media screen and (max-width: 720px) {
+      .reports__item {
+        width: 80%; } }
+    @media screen and (max-width: 540px) {
+      .reports__item {
+        width: 100%; } }
   .reports__date {
     display: block;
     position: relative;
@@ -454,12 +463,39 @@ body {
       left: 0;
       bottom: 23px;
       background: #fff; }
+    @media screen and (max-width: 1150px) {
+      .reports__date {
+        font-size: 6em; }
+        .reports__date:before {
+          bottom: 37px; }
+        .reports__date:after {
+          bottom: 17px; } }
+    @media screen and (max-width: 720px) {
+      .reports__date {
+        font-size: 5em; }
+        .reports__date:before {
+          bottom: 30px; }
+        .reports__date:after {
+          bottom: 10px; } }
+    @media screen and (max-width: 540px) {
+      .reports__date {
+        font-size: 4em; }
+        .reports__date:before {
+          bottom: 20px; }
+        .reports__date:after {
+          bottom: 0px; } }
+    @media screen and (max-width: 360px) {
+      .reports__date {
+        font-size: 3.5em; } }
   .reports__info {
     font-family: 'LL';
     position: relative;
     top: -20px;
     left: 0;
     padding: 0 10px; }
+    @media screen and (max-width: 540px) {
+      .reports__info {
+        top: -10px; } }
   .reports__header {
     font-family: 'LB';
     font-size: 1.4em;
