@@ -1,11 +1,17 @@
 .reports {
   margin-bottom:70px;
   text-align: center;
+  @media #{$max980} {
+    margin-top:70px;
+  }
   &__wrapper {
     display: flex;
     flex-direction: column;
     flex-flow: column;
     flex-wrap: wrap;
+    @media #{$max980} {
+      margin-top:50px;
+    }
   }
   &__item {
     align-self: flex-start;

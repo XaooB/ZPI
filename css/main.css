@@ -408,6 +408,9 @@ body {
 .reports {
   margin-bottom: 70px;
   text-align: center; }
+  @media screen and (max-width: 980px) {
+    .reports {
+      margin-top: 70px; } }
   .reports__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -420,6 +423,9 @@ body {
         flex-flow: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    @media screen and (max-width: 980px) {
+      .reports__wrapper {
+        margin-top: 50px; } }
   .reports__item {
     -ms-flex-item-align: start;
         align-self: flex-start;
