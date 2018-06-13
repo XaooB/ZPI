@@ -15,6 +15,15 @@
     &--right {
       align-self: flex-end;
     }
+    @media #{$max980} {
+      width:70%;
+    }
+    @media #{$max720} {
+      width:80%;
+    }
+    @media #{$max540} {
+      width:100%;
+    }
   }
   &__date {
     display: block;
@@ -40,6 +49,36 @@
       bottom:23px;
       background:#fff;
     }
+    @media #{$max1150} {
+      font-size:6em;
+      &:before {
+        bottom:37px;
+      }
+      &:after {
+        bottom:17px;
+      }
+    }
+    @media #{$max720} {
+      font-size:5em;
+      &:before {
+        bottom:30px;
+      }
+      &:after {
+        bottom:10px;
+      }
+    }
+    @media #{$max540} {
+      font-size:4em;
+      &:before {
+        bottom:20px;
+      }
+      &:after {
+        bottom:0px;
+      }
+    }
+    @media #{$max360} {
+      font-size:3.5em;
+    }
   }
   &__info {
     font-family:'LL';
@@ -47,6 +86,9 @@
     top:-20px;
     left:0;
     padding:0 10px;
+    @media #{$max540} {
+      top:-10px;
+    }
   }
   &__header {
     font-family:'LB';
