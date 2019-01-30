@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
-  <body>
+  <body id='top'>
     <div class="hero">
       <div class="container">
       <header class='header'>
@@ -36,14 +36,37 @@
             </li>
           </ul> <!-- END OF NAVIGATION LIST -->
         </nav> <!-- END OF NAVIGATION -->
+        <div class='navigation__mobile'>
+          <input id='nav-toggle' type='checkbox' class='navigation__checkbox' />
+          <label for='nav-toggle' class='navigation__hamburger'>
+            <span class='navigation__icon navigation__icon--bars'>&#9776;</span>
+            <span class='navigation__icon navigation__icon--x'>✕</span>
+          </label>
+          <div class='navigation__background'>&nbsp;</div>
+          <nav class='nav'>
+            <ul class='nav__list'>
+              <li class='nav__item'>
+                <a href="#projectID" class='nav__link' name='mobile-nav-link'>o projekcie</a>
+              </li>
+              <li class='nav__item'>
+                <a href="#aboutID" class='nav__link' name='mobile-nav-link'>o nas</a>
+              </li>
+              <li class='nav__item'>
+                <a href="#reportsID" class='nav__link' name='mobile-nav-link'>sprawozdania</a>
+              </li>
+              <li class='nav__item'>
+                <a href="#contactID" class='nav__link' name='mobile-nav-link'>kontakt</a>
+              </li>
+            </ul> <!-- END OF NAVIGATION LIST -->
+          </nav>
+        </div>
       </header> <!-- END OF HEADER -->
       <div class='hero__wrapper'>
         <section class="page-title">
           <h1 class='exceptional page-header'>WE ARE EXCEPTIONAL BUSTERS</h1>
         </section>
         <section class="page-desc">
-          <p>Strona stworzona w ramach projektu UKW - 'Zespołowy projekt informatyczny'. Znajdziesz na niej informacje nt. samego projektu oraz jego autorów. Naszym patronem jest firma <b>RevDeBug</b>.</p>
-          <button type="button" name="button" class='btn btn--success btn--right' disabled>Pozdrawiamy</button>
+          <p>Strona stworzona w ramach projektu UKW - 'Zespołowy projekt informatyczny'. <br /><br />Znajdziesz na niej informacje nt. samego projektu oraz jego autorów. Naszym patronem jest firma <b>RevDeBug</b>.</p>
         </section>
       </div> <!-- END OF HERO HERO WRAPPER -->
       </div> <!-- END OF CONTAINER -->
@@ -82,8 +105,8 @@
                   <img src="images/about/ja.jpg" class='about__image' alt="bartek lorek">
                 </figure>
                 <h4 class='about__name'>Lorek Bartosz</h4>
-                <p class='about__position'>Designer, frontend dev</p>
-                <p class='about__me'>Człowiek, którego jeden 'pixel off' doprowadza do szału. Odpowiedzialny za wizualną część strony. W wolnym czasie beatboxer.</p>
+                <p class='about__position'>Designer, Frontend dev</p>
+                <p class='about__me'>Człowiek, którego jeden 'pixel off' doprowadza do szału. Odpowiedzialny za stronę internetową oraz wizualną część aplikacji. W wolnym czasie beatboxer.</p>
               </article>
               <article class="about__item">
                   <figure class='about__image-wrapper'>
@@ -106,16 +129,8 @@
                     <img src="images/about/dawid.jpg" class='about__image' alt="dawid sawicki">
                   </figure>
                   <h4 class='about__name'>Dawid Sawicki</h4>
-                  <p class='about__position'>TBE</p>
+                  <p class='about__position'>Research i dokumentacja</p>
                   <p class='about__me'>Początkujący programista. Szukający najprostrzego i najszybszego rozwiązania problemów.</p>
-                </article>
-                <article class="about__item">
-                  <figure class='about__image-wrapper'>
-                    <img src="images/about/marcin.jpg" class='about__image' alt="marcin guzek">
-                  </figure>
-                  <h4 class='about__name'>Marcin Guzek</h4>
-                  <p class='about__position'>TBE</p>
-                  <p class='about__me'>Początkujący programista .NET C#. Do danego problemu stara podchodzić się twórczo, wyciągając wnioski i ucząc się na błędach.</p>
                 </article>
                 <article class="about__item">
                   <figure class='about__image-wrapper'>
@@ -130,7 +145,7 @@
                     <img src="images/about/mateusz.png" class='about__image' alt="mateusz kaczmarek">
                   </figure>
                   <h4 class='about__name'>Mateusz Kaczmarek</h4>
-                  <p class='about__position'>TBE</p>
+                  <p class='about__position'>Research i dokumentacja</p>
                   <p class='about__me'>Amator SolidWorks'a, początkujący programista. Dochodzi do żądanego efektu poprzez praktykę i ciężką pracę.</p>
                 </article>
               </div> <!-- END OF ABOUT WRAPPER -->
@@ -153,7 +168,7 @@
                   </ul>
                 </div>
               </div>
-              <div class='reports__item reports__item--right'>
+              <div class='reports__item'>
                 <span class='reports__date'>19.04.2018</span>
                 <div class='reports__info'>
                   <p class='reports__header'>Spotkanie nr 2</p>
@@ -167,7 +182,7 @@
                   <p class='reports__content'>Spotkanie w siedzibie firmy. Wspólnie przedstawiliśmy i omówiliśmy 10 projektów. Wraz z prowadzącym oceniliśmy ich plusy i minusy.</p>
                 </div>
               </div>
-              <div class='reports__item reports__item--right'>
+              <div class='reports__item'>
                 <span class='reports__date'>28.05.2018</span>
                 <div class='reports__info'>
                   <p class='reports__header'>Spotkanie nr 4</p>
@@ -184,6 +199,62 @@
                 <div class='reports__info'>
                   <p class='reports__header'>Spotkanie nr 5</p>
                   <p class='reports__content'>Zamknięcie pierwszego semestru związanego z projektem.</p>
+                </div>
+              </div>
+              <div class='reports__item'>
+                <span class='reports__date'>03.10.2018</span>
+                <div class='reports__info'>
+                  <p class='reports__header'>Spotkanie nr 6</p>
+                  <p class='reports__content'>Pierwsze spotkanie po wakacjach. Omówienie organizacji prac, w tym podział zadań wraz z omówieniem funkcjonalności.</p>
+                </div>
+              </div>
+              <div class='reports__item'>
+                <span class='reports__date'>17.10.2018</span>
+                <div class='reports__info'>
+                  <p class='reports__header'>Spotkanie nr 7</p>
+                  <p class='reports__content'>Pierwsze wspólne testowanie aplikacji.</p>
+                </div>
+              </div>
+              <div class='reports__item'>
+                <span class='reports__date'>07.11.2018</span>
+                <div class='reports__info'>
+                  <p class='reports__header'>Spotkanie nr 8</p>
+                  <p class='reports__content'>Spotkanie w siedzibie firmy. Pierwsza prezentacja projektu przed mentorem.</p>
+                </div>
+              </div>
+              <div class='reports__item'>
+                <span class='reports__date'>04.12.2018</span>
+                <div class='reports__info'>
+                  <p class='reports__header'>Spotkanie nr 9</p>
+                  <p class='reports__content'>Omówienie z mentorem przyszłych funkcjonalności i poprawa już istniejących.</p>
+                </div>
+              </div>
+              <div class='reports__item'>
+                <span class='reports__date'>14.12.2018</span>
+                <div class='reports__info'>
+                  <p class='reports__header'>Spotkanie nr 10</p>
+                  <p class='reports__content'>Pierwsze przygotowanie do wygłoszenia prezentacji.</p>
+                </div>
+              </div>
+              <div class='reports__item'>
+                <span class='reports__date'>21.12.2018</span>
+                <div class='reports__info'>
+                  <p class='reports__header'>Spotkanie nr 11</p>
+                  <p class='reports__content'>Przedświątecznie podsumowanie i kolejne próby prezentajci.</p>
+                </div>
+              </div>
+              <div class='reports__item'>
+                <span class='reports__date'>04.01.2019</span>
+                <div class='reports__info'>
+                  <p class='reports__header'>Spotkanie nr 12</p>
+                  <p class='reports__content'>Wnikliwa analiza funkcjonalności aplikacji mobilnej i webowej. Próby prezentacji ciąg dalszy.</p>
+                </div>
+              </div>
+              <div class='reports__item'>
+                <span class='reports__date'>07.01.2019</span>
+                <div class='reports__info'>
+                  <p class='reports__header'>Spotkanie nr 13</p>
+                  <p class='reports__content'>Ostatnie próba na szczęscie.</p>
                 </div>
               </div>
             </div>
@@ -246,13 +317,11 @@
         <p class='footer__copyright'>Copyright ©2018 EXCEPTIONAL BUSTERS. All rights reserved.</p>
       </div>  <!-- END OF CONTAINER -->
     </footer>  <!-- END OF FOOTER -->
-    <div class="scroll-wrapper">
-      <button type="button" name="button" id='scrollBtn' title='Go to top' class='btn btn--scroll' onclick="scrollToTop()">&lsaquo;</button>
-    </div>
-    <script src="js/smoothNavScroll.js"></script>
-    <script src="js/scrollTop.js"></script>
+    <a class="scroll-wrapper" href='#top'>
+      <button type="button" name="button" id='scrollBtn' title='Scroll Top' class='btn btn--scroll'>&lsaquo;</button>
+    </a>
+    <script src="js/mobile_nav.js"></script>
     <script type="text/javascript">
-    //tmp code
     let btn = document.querySelector('.scroll-wrapper');
       window.addEventListener('scroll', function() {
         if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {

@@ -1,5 +1,0 @@
-let myObject = {
-  init: (id) => {
-
-  }
-}

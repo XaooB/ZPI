@@ -51,4 +51,101 @@
       }
     }
   }
+  &__mobile {
+    display:none;
+    @media #{$max720} {
+      display:block; //show mobile nav instead
+    }
+    .nav {
+      display:block;
+      height:100vh;
+      width:0;
+      position:fixed;
+      top:0;
+      right:-200px;
+      z-index: 998;
+      opacity:0;
+      transition: all .5s;
+      max-height:100vh;
+      &__list {
+        list-style:none;
+        text-align:center;
+        text-transform: uppercase;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+      }
+      &__item {
+        margin:10px 0;
+      }
+      &__link {
+        padding:15px 35px;
+        display:block;
+        font-size:1.5em;
+        text-decoration:none;
+        color:$textPrimaryColor;
+        &:hover {
+          background: $textPrimaryColor;
+          color:$btnMoreBgColor;
+        }
+      }
+    }
+  }
+  &__checkbox {
+    display:none;
+    &:checked ~ .nav {
+      display:block;
+      right:0;
+      width:100%;
+      opacity:1;
+    }
+    &:checked ~ .navigation__background {
+      transform: scale(80);
+    }
+    &:checked ~ .navigation__hamburger .navigation__icon {
+      &--bars {
+        display:none;
+      }
+      &--x {
+        display:block;
+      }
+    }
+  }
+  &__icon {
+    display:block;
+    font-size:1.5em;
+    font-weight:bold;
+    &--bars {
+      display:block;
+    }
+    &--x {
+      display:none;
+    }
+  }
+  &__hamburger {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    width:50px;
+    height:50px;
+    top:35px;
+    right:20px;
+    z-index:999;
+    border-radius: 50%;
+    background:$pageIntroColor;
+  }
+  &__background {
+    background: linear-gradient(to bottom, #0d9b7a 0%,#08bd62 50%,#0d9b7a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border-radius:50%;
+    position:fixed;
+    top:40px;
+    right:26px;
+    width:40px;
+    height:40px;
+    z-index:997;
+    transform: scale(1);
+    transition: transform .5s ease-in-out;
+  }
 }

@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "LR";
   -webkit-box-sizing: border-box;
@@ -202,6 +205,100 @@ body {
         -webkit-transition: .3s width;
         transition: .3s width;
         width: 100%; }
+  .navigation__mobile {
+    display: none; }
+    @media screen and (max-width: 720px) {
+      .navigation__mobile {
+        display: block; } }
+    .navigation__mobile .nav {
+      display: block;
+      height: 100vh;
+      width: 0;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      z-index: 998;
+      opacity: 0;
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      max-height: 100vh; }
+      .navigation__mobile .nav__list {
+        list-style: none;
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+      .navigation__mobile .nav__item {
+        margin: 10px 0; }
+      .navigation__mobile .nav__link {
+        padding: 15px 35px;
+        display: block;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: #ffffff; }
+        .navigation__mobile .nav__link:hover {
+          background: #ffffff;
+          color: #15c191; }
+  .navigation__checkbox {
+    display: none; }
+    .navigation__checkbox:checked ~ .nav {
+      display: block;
+      right: 0;
+      width: 100%;
+      opacity: 1; }
+    .navigation__checkbox:checked ~ .navigation__background {
+      -webkit-transform: scale(80);
+              transform: scale(80); }
+    .navigation__checkbox:checked ~ .navigation__hamburger .navigation__icon--bars {
+      display: none; }
+    .navigation__checkbox:checked ~ .navigation__hamburger .navigation__icon--x {
+      display: block; }
+  .navigation__icon {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold; }
+    .navigation__icon--bars {
+      display: block; }
+    .navigation__icon--x {
+      display: none; }
+  .navigation__hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 35px;
+    right: 20px;
+    z-index: 999;
+    border-radius: 50%;
+    background: #ffffff; }
+  .navigation__background {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0d9b7a), color-stop(50%, #08bd62), to(#0d9b7a));
+    background: linear-gradient(to bottom, #0d9b7a 0%, #08bd62 50%, #0d9b7a 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border-radius: 50%;
+    position: fixed;
+    top: 40px;
+    right: 26px;
+    width: 40px;
+    height: 40px;
+    z-index: 997;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out; }
 
 .hero {
   background-image: url("../images/bg.png");
@@ -269,7 +366,7 @@ body {
     display: inline-block; }
 
 .project {
-  padding: 100px 0;
+  padding: 80px 0;
   margin: 50px 0;
   margin-bottom: 100px; }
   @media screen and (max-width: 720px) {
@@ -277,14 +374,15 @@ body {
       margin: 20px 0;
       padding: 50px 0; } }
   .project__logo {
-    height: 500px; }
+    height: 350px;
+    margin-right: 20px; }
     @media screen and (max-width: 720px) {
       .project__logo {
-        height: 150px;
+        height: 275px;
         margin-bottom: 50px; } }
     @media screen and (max-width: 360px) {
       .project__logo {
-        height: 100px; } }
+        height: 200px; } }
   .project__info {
     width: 55%; }
     @media screen and (max-width: 720px) {
@@ -317,8 +415,7 @@ body {
     font-size: 1.25em; }
 
 .about {
-  margin-bottom: 70px;
-  padding: 60px 0;
+  padding: 80px 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d9b7a+0,08bd62+50,0d9b7a+100 */
   background: #0d9b7a;
   /* Old browsers */
@@ -352,10 +449,9 @@ body {
         flex-wrap: wrap; }
   .about__item {
     text-align: center;
-    max-width: 310px;
+    max-width: 360px;
     margin-bottom: 50px;
     color: #ffffff;
-    text-transform: uppercase;
     word-spacing: 1.5px;
     letter-spacing: 1px;
     font-family: 'LL'; }
@@ -403,10 +499,12 @@ body {
               transform: translateX(-50%);
       width: 50px; }
   .about__me {
-    text-align: justify; }
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; }
 
 .reports {
-  margin-bottom: 70px;
+  padding: 80px 0;
   text-align: center; }
   @media screen and (max-width: 980px) {
     .reports {
@@ -436,6 +534,9 @@ body {
             flex-direction: column;
     margin-bottom: 25px; }
     .reports__item--right {
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
+    .reports__item:nth-child(even) {
       -ms-flex-item-align: end;
           align-self: flex-end; }
     @media screen and (max-width: 980px) {
