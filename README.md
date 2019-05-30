@@ -1,7 +1,11 @@
-# 7 EXCEPTION BUSTERS - website for ZPI project
+# 7 Exceptional Busters
 
-- Its a project in which we work with companies outside of university.
+> Simple landing page for University project called 'ZPI'.
 
-Used technologies
-------
-- HTML5, CSS3, JS
+## Screenshot
+
+![](zpi.png)
+
+## Contribution
+
+Bartosz Lorek – [@me](mailto:balorek@interia.pl)
